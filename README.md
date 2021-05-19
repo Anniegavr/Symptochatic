@@ -14,3 +14,5 @@ department that addresses the specified condition.
 
 Note: this chatbot is not a replacement for a face-to-face consultation with the doctors. Therefore,
 a visit to the hospital is highly recommended afterwards.
+
+To run the project you must run the bot.py file by typing - python bot.py.
