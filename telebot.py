@@ -9,8 +9,8 @@ import requests
 import random
 
 # Predifined phrases.
-greetings = ["Hi"]
-farewells = ['Bye', 'Bye-Bye', 'Goodbye', 'Have a good day', 'Stop']
+greetings = ["Hi, how can I help you?"]
+farewells = ['Bye', 'Bye-Bye', 'Goodbye', 'Have a good day', 'Stop', 'Hope I could help', 'Bye, don\'t forget to consult the real doc in case of something serious!']
 thank_you = ['Thanks', 'Thank you', 'Thanks a bunch', 'Thanks a lot.', 'Thank you very much', 'Thanks so much',
              'Thank you so much']
 thank_response = ['You\'re welcome.', 'No problem.', 'No worries.', ' My pleasure.', 'It was the least I could do.',
@@ -108,7 +108,7 @@ class telegram_bot:
 
             # If message is a /start command we will sent greeting message.
             if user_msg == '/start':
-                bot_resp = f"""Hi! {name}. I am proTexter. \nI'll keep the bad guys out. \nType Bye to Exit."""
+                bot_resp = f"""Hi! {name}. I am Dr. A.I. Bolit. \nI'll try to help you get answers. Tell me your symptoms. \nAnd remember to consult a real doctor in case of a serious illness. \nType Bye to Exit."""
                 self.send_message(bot_resp, chat_id)
             # If message is a thank you form we wil send to the user a thank you response.
             elif user_msg in thank_you:
